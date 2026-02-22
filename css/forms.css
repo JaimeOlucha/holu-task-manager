@@ -1,0 +1,118 @@
+.auth-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem 1rem;
+}
+
+.auth-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color-muted);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.auth-brand img {
+    height: 30px;
+    width: auto;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.login-card,
+.form-container {
+    width: 100%;
+    padding: 2.5rem;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-hover);
+}
+
+.login-card {
+    max-width: 400px;
+    margin: 0;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 3rem auto;
+}
+
+.login-card h2,
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: var(--color-dark);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-dark);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    color: var(--text-color-main);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.15);
+    outline: none;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form-actions .btn,
+.form-actions button[type="submit"] {
+    margin: 0;
+    flex: 1;
+}
+
+.enlace-pie {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.enlace-pie a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.enlace-pie a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,188 @@
+/* TABLA Y DASHBOARD */
+.acciones-header {
+    /* Posicionamiento y Dimensiones */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.titulo-seccion {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    /* Permite scroll horizontal en móviles */
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+}
+
+table {
+    /* Posicionamiento y Dimensiones */
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+
+    /* Estilos */
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+
+    /* Misc */
+    overflow: hidden;
+}
+
+th {
+    /* Posicionamiento y Dimensiones */
+    padding: 1.2rem 1rem;
+
+    /* Estilos */
+    background-color: var(--color-white);
+    border-bottom: 2px solid #f0f0f0;
+    color: var(--text-color-muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+th:nth-child(1) {
+    width: 10%;
+}
+
+th:nth-child(2) {
+    width: 20%;
+}
+
+th:nth-child(3) {
+    width: 20%;
+}
+
+th:nth-child(4) {
+    width: 15%;
+}
+
+th:nth-child(5) {
+    width: 15%;
+}
+
+th:nth-child(6) {
+    width: 20%;
+}
+
+
+td {
+    /* Posicionamiento y Dimensiones */
+    padding: 1.2rem 1rem;
+
+    /* Estilos */
+    border-bottom: 1px solid #f8f9fa;
+    color: var(--text-color-main);
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+
+tr:hover td {
+    background-color: #fafbfc;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.acciones .btn {
+    /* Posicionamiento y Dimensiones */
+    height: auto;
+    padding: 0;
+
+    /* Estilos */
+    background: transparent;
+    color: var(--text-color-muted);
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.acciones .btn-warning {
+    color: var(--color-warning);
+}
+
+.acciones .btn-danger {
+    color: var(--color-danger);
+}
+
+.acciones .btn:hover {
+    background: transparent;
+    transform: translateY(-2px);
+}
+
+.acciones .btn-warning:hover {
+    color: #d97706;
+}
+
+.acciones .btn-danger:hover {
+    color: #b91c1c;
+}
+
+.badge-estado {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* Colores Dinámicos de los Estados */
+.badge-pendiente {
+    background-color: #f1f5f9; 
+    color: #475569;
+}
+
+.badge-en_progreso {
+    background-color: #eff6ff;
+    color: #1d4ed8; 
+}
+
+.badge-completada {
+    background-color: #e6f4f1; 
+    color: var(--color-primary-dark); 
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.paginacion a {
+    padding: 0.5rem 1rem;
+    background: var(--color-white);
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius-md);
+    color: var(--text-color-main);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.paginacion a:hover {
+    background: #f3f4f6;
+}
+
+.paginacion a.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+}

@@ -1,0 +1,91 @@
+/* FUENTES Y VARIABLES */
+@font-face {
+    font-family: 'TkTSans';
+    src: url('../fonts/tiktok-sans.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-primary: #009688;
+    --color-primary-dark: #00796b;
+    --color-secondary: #ABD5C0;
+    --color-dark: #111111;
+    --color-white: #ffffff;
+    --color-light: #f8f9fa;
+    --color-danger: #dc2626;
+    --color-warning: #f59e0b;
+
+    --font-main: 'TkTSans', system-ui, -apple-system, sans-serif;
+    --text-color-main: #1a1a1a;
+    --text-color-muted: #666666;
+
+    --radius-md: 8px;
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 10px 30px rgba(0, 150, 136, 0.15);
+
+    --transition-fast: 0.3s ease;
+}
+
+* {
+    /* Estilos */
+    box-sizing: border-box;
+}
+
+body {
+    /* Posicionamiento y Dimensiones */
+    margin: 0;
+    min-height: 100vh;
+
+    /* Estilos */
+    background-color: var(--color-light);
+    color: var(--text-color-main);
+    font-family: var(--font-main);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+
+    /* Dimensiones sobredimensionadas para evitar cortes al rotar */
+    top: -50%;
+    left: -50%;
+    width: 200vw;
+    height: 200vh;
+    z-index: -1;
+
+    /* IMAGEN DEL PATRÓN */
+    background-image: url('../img/logo-holu-open-close.svg');
+    background-repeat: repeat;
+    background-size: 100px;
+
+    /* Efectos visuales */
+    opacity: 0.02;
+    transform: rotate(-5deg);
+    filter: grayscale(100%);
+
+    /* Evita que el fondo bloquee los clics en la web */
+    pointer-events: none;
+}
+
+.text-center {
+    /* Estilos */
+    text-align: center;
+}
+
+.text-truncate {
+    /* Posicionamiento y Dimensiones */
+    display: block;
+    max-width: 100%;
+
+    /* Estilos */
+    white-space: nowrap;
+    /* Prohíbe totalmente los saltos de línea */
+    overflow: hidden;
+    /* Corta lo que sobra */
+    text-overflow: ellipsis;
+    /* Pone los 3 puntos (...) */
+    color: var(--text-color-muted);
+    font-size: 0.95rem;
+}

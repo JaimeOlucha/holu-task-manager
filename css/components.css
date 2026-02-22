@@ -1,0 +1,222 @@
+/* COMPONENTES Y BOTONES */
+.btn,
+button[type="submit"] {
+    /* Posicionamiento y Dimensiones */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 46px;
+    padding: 0 1.5rem;
+    margin-top: 0.5rem;
+
+    /* Estilos */
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    /* Misc */
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform 0.2s;
+}
+
+.btn:hover,
+button[type="submit"]:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.btn-primary {
+    width: auto;
+    margin-top: 0;
+}
+
+.btn-danger {
+    background-color: var(--color-danger);
+    width: auto;
+    margin-top: 0;
+}
+
+.btn-danger:hover {
+    background-color: #b91c1c;
+}
+
+.btn-warning {
+    background-color: var(--color-warning);
+    width: auto;
+    margin-top: 0;
+}
+
+.btn-warning:hover {
+    background-color: #d97706;
+}
+
+.btn-sm {
+    height: 36px;
+    padding: 0 1rem;
+    font-size: 0.85rem;
+}
+
+/* Alertas */
+.alert {
+    /* Posicionamiento y Dimensiones */
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+
+    /* Estilos */
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #e6f4f1;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-primary-dark);
+}
+
+.alert-error {
+    background-color: #fee2e2;
+    border: 1px solid var(--color-danger);
+    color: #b91c1c;
+}
+
+/* Modal */
+.modal-overlay {
+    /* Posicionamiento y Dimensiones */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Estilos */
+    background: rgba(17, 17, 17, 0.5);
+    backdrop-filter: blur(4px);
+
+    /* Misc */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    /* Posicionamiento y Dimensiones */
+    width: 90%;
+    max-width: 550px;
+    padding: 2.5rem;
+
+    /* Estilos */
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-hover);
+
+    /* Misc */
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--color-dark);
+}
+
+.modal-close,
+.btn-link {
+    /* Estilos */
+    background: transparent !important;
+    border: none;
+    box-shadow: none !important;
+
+    /* Misc */
+    cursor: pointer;
+}
+
+.modal-close {
+    padding: 0;
+    color: var(--text-color-muted);
+    font-size: 2rem;
+    line-height: 1;
+    transition: color var(--transition-fast);
+}
+
+.modal-close:hover {
+    color: var(--color-danger) !important;
+}
+
+.btn-link {
+    padding: 0;
+    margin-top: 8px;
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.btn-link:hover {
+    color: var(--color-primary-dark) !important;
+    text-decoration: underline;
+}
+
+.modal-body {
+    max-height: 55vh;
+    overflow-y: auto;
+    color: var(--text-color-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    white-space: pre-wrap;
+}
+
+/* PARA MOVIL */
+.modal-title-spaced {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--color-dark);
+    font-size: 1.5rem;
+}
+
+.modal-text {
+    color: var(--text-color-muted);
+    margin-bottom: 1rem;
+}
+
+.modal-text-spaced {
+    color: var(--text-color-muted);
+    margin-bottom: 2rem;
+}
+
+.modal-logo {
+    height: 35px;
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-full {
+    width: 100% !important;
+}

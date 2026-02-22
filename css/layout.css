@@ -1,0 +1,177 @@
+/* ESTRUCTURA Y PRELOADER */
+.container {
+    /* Posicionamiento y Dimensiones */
+    width: 100%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#preloader {
+    /* Posicionamiento y Dimensiones */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+
+    /* Misc */
+    visibility: visible;
+    transition: visibility 0s 1s;
+}
+
+.panel {
+    /* Posicionamiento y Dimensiones */
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+    /* Estilos */
+    background-color: var(--color-white);
+
+    /* Misc */
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.panel-left {
+    justify-content: flex-end;
+}
+
+.panel-right {
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.bracket-img {
+    display: block;
+    width: auto;
+    height: 90px;
+}
+
+.bracket-img-open {
+    position: absolute;
+    right: -6px;
+}
+
+.bracket-img-close {
+    position: absolute;
+    left: -6px;
+}
+
+body.loaded #preloader {
+    visibility: hidden;
+}
+
+body.loaded .panel-left {
+    transform: translateX(-105%);
+}
+
+body.loaded .panel-right {
+    transform: translateX(105%);
+}
+
+.header {
+    /* Posicionamiento y Dimensiones */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+
+    /* Estilos */
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-soft);
+}
+
+.navbar {
+    /* Posicionamiento y Dimensiones */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.brand-logo {
+    display: block;
+    width: auto;
+    height: 35px;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-greeting {
+    color: var(--text-color-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor:context-menu;
+}
+
+.user-greeting strong {
+    color: var(--color-primary-dark);
+}
+
+
+/* Danger Zone */
+.danger-zone {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.danger-zone-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--text-color-muted);
+    font-size: 0.9rem;
+}
+
+.btn-delete-account {
+    width: auto !important;
+    padding: 0.5rem 1.5rem !important;
+}
+
+.empty-state {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.empty-state-img {
+    height: 45px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.empty-state-title {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--color-dark);
+}
+
+.empty-state-text {
+    color: var(--text-color-muted);
+    margin-bottom: 2rem;
+}
+
+.empty-state-btn {
+    width: auto !important;
+    padding: 0.75rem 2rem !important;
+}
