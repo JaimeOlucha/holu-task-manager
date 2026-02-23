@@ -42,7 +42,7 @@ $resultado = $stmt_tareas->get_result();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Tareas</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/webp" href="/img/logo-holu-favicon.webp">
+    <link rel="icon" type="image/webp" href="img/logo-holu-favicon.webp">
     <script src="script.js" defer></script>
 </head>
 
@@ -50,7 +50,7 @@ $resultado = $stmt_tareas->get_result();
     <header class="header">
         <nav class="navbar">
             <div class="logo-container">
-                <img src="/img/logo-holu.webp" alt="holu logo" class="brand-logo">
+                <img src="img/logo-holu.webp" alt="holu logo" class="brand-logo">
             </div>
 
             <div class="user-menu">
@@ -181,7 +181,7 @@ $resultado = $stmt_tareas->get_result();
                     <?php echo htmlspecialchars($_SESSION['nombre_usuario'], ENT_QUOTES, 'UTF-8'); ?>!
                 </h2>
                 <p class="modal-text">Al gestor de tareas de</p>
-                <img src="/img/logo-holu.webp" alt="holu logo" class="modal-logo empty-state-img">
+                <img src="img/logo-holu.webp" alt="holu logo" class="modal-logo empty-state-img">
                 <button class="btn btn-primary btn-full" id="btnCerrarWelcome">¡Empezar a organizar!</button>
             </div>
         </div>
