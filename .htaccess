@@ -1,0 +1,3 @@
+RewriteEngine On
+# Si alguien entra a la raíz, mándalo a src/index.php
+RewriteRule ^$ src/index.php [L]
