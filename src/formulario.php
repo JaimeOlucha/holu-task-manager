@@ -53,7 +53,7 @@ if ($id) {
         <?php echo $id ? 'Editar' : 'Nueva'; ?> Tarea
     </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/webp" href="../img/logo-holu-favicon.webp">
+    <link rel="icon" type="image/webp" href="/img/logo-holu-favicon.webp">
     <script src="script.js" defer></script>
 </head>
 

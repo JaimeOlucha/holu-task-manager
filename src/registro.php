@@ -66,25 +66,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Gestión de Tareas</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/webp" href="../img/logo-holu-favicon.webp">
+    <link rel="icon" type="image/webp" href="/img/logo-holu-favicon.webp">
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <div id="preloader">
         <div class="panel panel-left">
-            <img src="../img/logo-holu-open.svg" alt="<" class="bracket-img bracket-img-open">
+            <img src="/img/logo-holu-open.svg" alt="<" class="bracket-img bracket-img-open">
         </div>
 
         <div class="panel panel-right">
-            <img src="../img/logo-holu-close.svg" alt="/>" class="bracket-img bracket-img-close">
+            <img src="/img/logo-holu-close.svg" alt="/>" class="bracket-img bracket-img-close">
         </div>
     </div>
 
     <div class="auth-layout">
         <div class="auth-brand">
             <span>Gestor de Tareas de</span>
-            <img src="../img/logo-holu.svg" alt="holu logo">
+            <img src="/img/logo-holu.svg" alt="holu logo">
         </div>
 
         <div class="login-card">
