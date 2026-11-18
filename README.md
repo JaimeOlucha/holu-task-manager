@@ -11,10 +11,6 @@
 Este repositorio contiene el código fuente del proyecto. 
 Para aumentar la experiencia de uso, el sistema ya se encuentra desplegado y listo para su uso.
 
-
-**Puedes ver la aplicación funcionando en tiempo real en el siguiente enlace:**
-**👉 https://gestortareas.holu.es/**
-
 ---
 
 ### 🗄️ Configuración de la Base de Datos (MySQL)
